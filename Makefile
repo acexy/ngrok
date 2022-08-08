@@ -44,8 +44,9 @@ release-all: fmt release-client release-server
 all: fmt client server
 
 clean:
+	rm -rf src/ngrok/client/assets/ src/ngrok/server/assets/ device.csr rootCA.key rootCA.srl
+	git checkout assets
 	go clean -i -r ngrok/...
-	rm -rf src/ngrok/client/assets/ src/ngrok/server/assets/
 
 contributors:
 	echo "Contributors to ngrok, both large and small:\n" > CONTRIBUTORS

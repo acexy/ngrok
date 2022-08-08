@@ -9,3 +9,7 @@ src/gopkg.in
 src/ngrok/client/assets/
 src/ngrok/server/assets/
 .idea
+assets
+device.crt
+device.key
+rootCA.pem
